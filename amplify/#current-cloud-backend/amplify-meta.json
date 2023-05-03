@@ -1,0 +1,115 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify38bd032c87ca4-staging-183209-authRole",
+      "UnauthRoleArn": "arn:aws:iam::680406192295:role/amplify-amplify38bd032c87ca4-staging-183209-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::680406192295:role/amplify-amplify38bd032c87ca4-staging-183209-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-amplify38bd032c87ca4-staging-183209-deployment",
+      "UnauthRoleName": "amplify-amplify38bd032c87ca4-staging-183209-unauthRole",
+      "StackName": "amplify-amplify38bd032c87ca4-staging-183209",
+      "StackId": "arn:aws:cloudformation:us-west-1:680406192295:stack/amplify-amplify38bd032c87ca4-staging-183209/5160abf0-e785-11ed-88d9-06cfa55ac087",
+      "AmplifyAppId": "d256nzzacwvoey",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplify38bd032c87ca4-staging-183209-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    }
+  },
+  "auth": {
+    "ballotbettingaedf131a": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL",
+          "PHONE_NUMBER"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify38bd032c87ca4-staging-183209-deployment/amplify-cfn-templates/auth/ballotbettingaedf131a-cloudformation-template.json",
+        "logicalId": "authballotbettingaedf131a"
+      },
+      "lastPushTimeStamp": "2023-05-03T16:17:08.058Z",
+      "output": {
+        "UserPoolId": "us-west-1_wkdxSmvAg",
+        "AppClientIDWeb": "euvf75fh88ns1i9rn7cq0nur9",
+        "AppClientID": "41ls6qa19l89ifimpb4r73hs3g",
+        "IdentityPoolId": "us-west-1:b4749f60-7c36-4826-9b31-e7d5a13dd332",
+        "UserPoolArn": "arn:aws:cognito-idp:us-west-1:680406192295:userpool/us-west-1_wkdxSmvAg",
+        "IdentityPoolName": "ballotbettingaedf131a_identitypool_aedf131a__staging",
+        "UserPoolName": "ballotbettingaedf131a_userpool_aedf131a"
+      },
+      "lastPushDirHash": "QYtXqvjL9YsGPK7oP9boaSM8OKY="
+    }
+  },
+  "function": {
+    "ballotbettingauth": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-05-03T16:14:34.325Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-05-03T16:14:34.354Z",
+      "distZipFilename": "ballotbettingauth-6d4d31744e7059744931-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-amplify38bd032c87ca4-staging-183209-deployment",
+        "s3Key": "amplify-builds/ballotbettingauth-6d4d31744e7059744931-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify38bd032c87ca4-staging-183209-deployment/amplify-cfn-templates/function/ballotbettingauth-cloudformation-template.json",
+        "logicalId": "functionballotbettingauth"
+      },
+      "lastPushTimeStamp": "2023-05-03T16:17:08.058Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::680406192295:role/ballotbettingLambdaRole3587e79f-staging",
+        "Region": "us-west-1",
+        "Arn": "arn:aws:lambda:us-west-1:680406192295:function:ballotbettingauth-staging",
+        "Name": "ballotbettingauth-staging",
+        "LambdaExecutionRole": "ballotbettingLambdaRole3587e79f-staging"
+      },
+      "lastPushDirHash": "PXsf65ibV/FBe2yCbFmpoQUEBTY="
+    }
+  },
+  "api": {
+    "ballotbettingauth": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "ballotbettingauth",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify38bd032c87ca4-staging-183209-deployment/amplify-cfn-templates/api/ballotbettingauth-cloudformation-template.json",
+        "logicalId": "apiballotbettingauth"
+      },
+      "lastPushTimeStamp": "2023-05-03T16:17:08.058Z",
+      "output": {
+        "ApiName": "ballotbettingauth",
+        "RootUrl": "https://3511u4b0ra.execute-api.us-west-1.amazonaws.com/staging",
+        "ApiId": "3511u4b0ra"
+      },
+      "lastPushDirHash": "cffjJsFgjuXg/K1SDO54GtvpyFk="
+    }
+  }
+}
