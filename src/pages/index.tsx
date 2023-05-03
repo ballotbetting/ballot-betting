@@ -1,12 +1,12 @@
-import { Amplify } from 'aws-amplify';
-import config from '../aws-exports';
 
-Amplify.configure(config);
+import App from './_app';
+import ReactDOM from 'react-dom';
+import React from 'react';
 
-export default function Home() {
-  return (
-    <div>
-      <p> This is a UI test change </p>
-    </div>
-  )
-}
+  ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+  
