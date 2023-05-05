@@ -152,27 +152,6 @@
         }
       }
     },
-    "APIGatewayAuthStack": {
-      "Type": "AWS::CloudFormation::Stack",
-      "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-amplify38bd032c87ca4-staging-183209-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json",
-        "Parameters": {
-          "authRoleName": {
-            "Ref": "AuthRoleName"
-          },
-          "unauthRoleName": {
-            "Ref": "UnauthRoleName"
-          },
-          "env": "staging",
-          "ballotbettingauth": {
-            "Fn::GetAtt": [
-              "apiballotbettingauth",
-              "Outputs.ApiId"
-            ]
-          }
-        }
-      }
-    },
     "authballotbettingaedf131a": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
@@ -223,38 +202,6 @@
           },
           "breakCircularDependency": true,
           "dependsOn": "",
-          "env": "staging"
-        }
-      }
-    },
-    "functionballotbettingauth": {
-      "Type": "AWS::CloudFormation::Stack",
-      "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-amplify38bd032c87ca4-staging-183209-deployment/amplify-cfn-templates/function/ballotbettingauth-cloudformation-template.json",
-        "Parameters": {
-          "deploymentBucketName": "amplify-amplify38bd032c87ca4-staging-183209-deployment",
-          "s3Key": "amplify-builds/ballotbettingauth-6d4d31744e7059744931-build.zip",
-          "env": "staging"
-        }
-      }
-    },
-    "apiballotbettingauth": {
-      "Type": "AWS::CloudFormation::Stack",
-      "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-amplify38bd032c87ca4-staging-183209-deployment/amplify-cfn-templates/api/ballotbettingauth-cloudformation-template.json",
-        "Parameters": {
-          "functionballotbettingauthName": {
-            "Fn::GetAtt": [
-              "functionballotbettingauth",
-              "Outputs.Name"
-            ]
-          },
-          "functionballotbettingauthArn": {
-            "Fn::GetAtt": [
-              "functionballotbettingauth",
-              "Outputs.Arn"
-            ]
-          },
           "env": "staging"
         }
       }

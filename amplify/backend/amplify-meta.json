@@ -9,8 +9,7 @@
       "UnauthRoleName": "amplify-amplify38bd032c87ca4-staging-183209-unauthRole",
       "StackName": "amplify-amplify38bd032c87ca4-staging-183209",
       "StackId": "arn:aws:cloudformation:us-west-1:680406192295:stack/amplify-amplify38bd032c87ca4-staging-183209/5160abf0-e785-11ed-88d9-06cfa55ac087",
-      "AmplifyAppId": "d256nzzacwvoey",
-      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplify38bd032c87ca4-staging-183209-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+      "AmplifyAppId": "d256nzzacwvoey"
     }
   },
   "auth": {
@@ -44,7 +43,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify38bd032c87ca4-staging-183209-deployment/amplify-cfn-templates/auth/ballotbettingaedf131a-cloudformation-template.json",
         "logicalId": "authballotbettingaedf131a"
       },
-      "lastPushTimeStamp": "2023-05-05T22:24:55.636Z",
+      "lastPushTimeStamp": "2023-05-05T22:30:22.225Z",
       "output": {
         "UserPoolId": "us-west-1_wkdxSmvAg",
         "AppClientIDWeb": "euvf75fh88ns1i9rn7cq0nur9",

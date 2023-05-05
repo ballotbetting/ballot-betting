@@ -26,13 +26,6 @@ const awsmobile = {
     },
     "aws_cognito_verification_mechanisms": [
         "EMAIL"
-    ],
-    "aws_cloud_logic_custom": [
-        {
-            "name": "ballotbettingauth",
-            "endpoint": "https://3511u4b0ra.execute-api.us-west-1.amazonaws.com/staging",
-            "region": "us-west-1"
-        }
     ]
 };
 
