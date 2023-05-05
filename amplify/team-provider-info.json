@@ -15,15 +15,6 @@
     "categories": {
       "auth": {
         "ballotbettingaedf131a": {}
-      },
-      "function": {
-        "ballotbettingauth": {
-          "deploymentBucketName": "amplify-amplify38bd032c87ca4-staging-183209-deployment",
-          "s3Key": "amplify-builds/ballotbettingauth-6d4d31744e7059744931-build.zip"
-        }
-      },
-      "api": {
-        "ballotbettingauth": {}
       }
     }
   }
