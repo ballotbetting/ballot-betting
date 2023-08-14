@@ -40,6 +40,11 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-ballotbetting-dev-10050-deployment/amplify-cfn-templates/auth/ballotbettingaedf131a-cloudformation-template.json",
+        "logicalId": "authballotbettingaedf131a"
+      },
+      "lastPushTimeStamp": "2023-08-14T01:02:59.476Z",
       "output": {
         "UserPoolId": "us-west-1_5A7IeGhHO",
         "AppClientIDWeb": "6ujf431ofkvgf5t03f5jc5khhu",
@@ -49,11 +54,7 @@
         "IdentityPoolName": "ballotbettingaedf131a_identitypool_aedf131a__dev",
         "UserPoolName": "ballotbettingaedf131a_userpool_aedf131a"
       },
-      "lastPushTimeStamp": "2023-08-14T02:39:30.767Z",
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-ballotbetting-dev-10050-deployment/amplify-cfn-templates/auth/ballotbettingaedf131a-cloudformation-template.json",
-        "logicalId": "authballotbettingaedf131a"
-      }
+      "lastPushDirHash": "QYtXqvjL9YsGPK7oP9boaSM8OKY="
     }
   },
   "function": {}
