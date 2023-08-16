@@ -12,7 +12,22 @@
       "AmplifyAppId": "d256nzzacwvoey"
     }
   },
-  "api": {},
+  "api": {
+    "electionsApi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "electionsLambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
+    }
+  },
   "auth": {
     "ballotbettingaedf131a": {
       "customAuth": false,
@@ -56,5 +71,17 @@
       }
     }
   },
-  "function": {}
+  "function": {
+    "electionsLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "storage": {
+    "elections": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation"
+    }
+  }
 }
