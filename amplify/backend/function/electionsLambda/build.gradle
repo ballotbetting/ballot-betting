@@ -16,7 +16,7 @@ dependencies {
     )
 }
 
-jar.baseName = 'latest_build'
+jar.archivesBaseName = 'latest_build'
 
 task buildZip(type: Zip) {
     from compileJava
