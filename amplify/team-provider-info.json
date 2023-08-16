@@ -16,7 +16,16 @@
         "ballotbettingaedf131a": {}
       },
       "function": {
-        "electionsLambda": {}
+        "electionsLambda": {
+          "deploymentBucketName": "amplify-ballotbetting-dev-10050-deployment",
+          "s3Key": "amplify-builds/electionsLambda-534d634a707771495553-build.zip"
+        }
+      },
+      "api": {
+        "electionsApi": {}
+      },
+      "storage": {
+        "elections": {}
       }
     }
   }

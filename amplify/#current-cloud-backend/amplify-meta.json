@@ -12,7 +12,33 @@
       "AmplifyAppId": "d256nzzacwvoey"
     }
   },
-  "api": {},
+  "api": {
+    "electionsApi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "electionsLambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-ballotbetting-dev-10050-deployment/amplify-cfn-templates/api/electionsApi-cloudformation-template.json",
+        "logicalId": "apielectionsApi"
+      },
+      "lastPushTimeStamp": "2023-08-16T05:06:47.216Z",
+      "output": {
+        "ApiName": "electionsApi",
+        "RootUrl": "https://cqcsm38ze4.execute-api.us-west-1.amazonaws.com/dev",
+        "ApiId": "cqcsm38ze4"
+      },
+      "lastPushDirHash": "3yJ1g4feEK0YxDvXfGeJOM0orxE="
+    }
+  },
   "auth": {
     "ballotbettingaedf131a": {
       "customAuth": false,
@@ -23,8 +49,8 @@
           "SMS"
         ],
         "passwordProtectionSettings": {
-          "passwordPolicyCharacters": [],
-          "passwordPolicyMinLength": 8
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
         },
         "signupAttributes": [
           "EMAIL"
@@ -49,13 +75,59 @@
         "IdentityPoolName": "ballotbettingaedf131a_identitypool_aedf131a__dev",
         "UserPoolName": "ballotbettingaedf131a_userpool_aedf131a"
       },
-      "lastPushTimeStamp": "2023-08-14T02:50:07.283Z",
+      "lastPushTimeStamp": "2023-08-16T05:06:46.958Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-ballotbetting-dev-10050-deployment/amplify-cfn-templates/auth/ballotbettingaedf131a-cloudformation-template.json",
         "logicalId": "authballotbettingaedf131a"
-      },
-      "lastPushDirHash": "QYtXqvjL9YsGPK7oP9boaSM8OKY="
+      }
     }
   },
-  "function": {}
+  "function": {
+    "electionsLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-08-16T05:05:09.405Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-08-16T05:05:09.423Z",
+      "distZipFilename": "electionsLambda-534d634a707771495553-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-ballotbetting-dev-10050-deployment",
+        "s3Key": "amplify-builds/electionsLambda-534d634a707771495553-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-ballotbetting-dev-10050-deployment/amplify-cfn-templates/function/electionsLambda-cloudformation-template.json",
+        "logicalId": "functionelectionsLambda"
+      },
+      "lastPushTimeStamp": "2023-08-16T05:06:47.216Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::680406192295:role/ballotbettingLambdaRole3628924d-dev",
+        "Region": "us-west-1",
+        "Arn": "arn:aws:lambda:us-west-1:680406192295:function:electionsLambda-dev",
+        "Name": "electionsLambda-dev",
+        "LambdaExecutionRole": "ballotbettingLambdaRole3628924d-dev"
+      },
+      "lastPushDirHash": "IxJrqDoyAKB2HHgDhVTm8O6TcE4="
+    }
+  },
+  "storage": {
+    "elections": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-ballotbetting-dev-10050-deployment/amplify-cfn-templates/storage/elections-cloudformation-template.json",
+        "logicalId": "storageelections"
+      },
+      "lastPushTimeStamp": "2023-08-16T05:06:47.216Z",
+      "output": {
+        "PartitionKeyName": "rid",
+        "Region": "us-west-1",
+        "Arn": "arn:aws:dynamodb:us-west-1:680406192295:table/elections-dev",
+        "StreamArn": "arn:aws:dynamodb:us-west-1:680406192295:table/elections-dev/stream/2023-08-16T05:05:22.094",
+        "PartitionKeyType": "S",
+        "Name": "elections-dev"
+      },
+      "lastPushDirHash": "XfBFVBG7aT2e2i0QgMGnXiPHAsY="
+    }
+  }
 }

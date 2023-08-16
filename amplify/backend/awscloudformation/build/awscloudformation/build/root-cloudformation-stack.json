@@ -152,6 +152,27 @@
         }
       }
     },
+    "apielectionsApi": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-ballotbetting-dev-10050-deployment/amplify-cfn-templates/api/electionsApi-cloudformation-template.json",
+        "Parameters": {
+          "functionelectionsLambdaName": {
+            "Fn::GetAtt": [
+              "functionelectionsLambda",
+              "Outputs.Name"
+            ]
+          },
+          "functionelectionsLambdaArn": {
+            "Fn::GetAtt": [
+              "functionelectionsLambda",
+              "Outputs.Arn"
+            ]
+          },
+          "env": "dev"
+        }
+      }
+    },
     "authballotbettingaedf131a": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
@@ -202,6 +223,29 @@
           },
           "breakCircularDependency": true,
           "dependsOn": "",
+          "env": "dev"
+        }
+      }
+    },
+    "functionelectionsLambda": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-ballotbetting-dev-10050-deployment/amplify-cfn-templates/function/electionsLambda-cloudformation-template.json",
+        "Parameters": {
+          "deploymentBucketName": "amplify-ballotbetting-dev-10050-deployment",
+          "s3Key": "amplify-builds/electionsLambda-534d634a707771495553-build.zip",
+          "env": "dev"
+        }
+      }
+    },
+    "storageelections": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-ballotbetting-dev-10050-deployment/amplify-cfn-templates/storage/elections-cloudformation-template.json",
+        "Parameters": {
+          "tableName": "elections",
+          "partitionKeyName": "rid",
+          "partitionKeyType": "S",
           "env": "dev"
         }
       }

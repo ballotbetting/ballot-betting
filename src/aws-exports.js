@@ -3,6 +3,13 @@
 
 const awsmobile = {
     "aws_project_region": "us-west-1",
+    "aws_cloud_logic_custom": [
+        {
+            "name": "electionsApi",
+            "endpoint": "https://cqcsm38ze4.execute-api.us-west-1.amazonaws.com/dev",
+            "region": "us-west-1"
+        }
+    ],
     "aws_cognito_identity_pool_id": "us-west-1:b77f9e9a-83e7-415b-a0a1-0647aa10bff5",
     "aws_cognito_region": "us-west-1",
     "aws_user_pools_id": "us-west-1_5A7IeGhHO",
@@ -26,6 +33,13 @@ const awsmobile = {
     },
     "aws_cognito_verification_mechanisms": [
         "EMAIL"
+    ],
+    "aws_dynamodb_all_tables_region": "us-west-1",
+    "aws_dynamodb_table_schemas": [
+        {
+            "tableName": "elections-dev",
+            "region": "us-west-1"
+        }
     ]
 };
 
