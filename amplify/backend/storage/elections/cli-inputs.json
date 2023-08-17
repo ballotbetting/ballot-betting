@@ -1,0 +1,10 @@
+{
+  "resourceName": "elections",
+  "tableName": "elections",
+  "partitionKey": {
+    "fieldName": "rid",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
