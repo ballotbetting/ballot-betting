@@ -1,0 +1,66 @@
+
+@echo off
+set "NODE_VIRTUAL_ENV=c:\Environments\node18"
+if not defined PROMPT (
+    set "PROMPT=$P$G"
+)
+if defined _OLD_VIRTUAL_PROMPT (
+    set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
+)
+if defined _OLD_VIRTUAL_NODE_PATH (
+    set "NODE_PATH=%_OLD_VIRTUAL_NODE_PATH%"
+)
+set "_OLD_VIRTUAL_PROMPT=%PROMPT%"
+set "PROMPT=(node18) %PROMPT%"
+if defined NODE_PATH (
+    set "_OLD_VIRTUAL_NODE_PATH=%NODE_PATH%"
+    set NODE_PATH=
+)
+if defined _OLD_VIRTUAL_PATH (
+    set "PATH=%_OLD_VIRTUAL_PATH%"
+) else (
+    set "_OLD_VIRTUAL_PATH=%PATH%"
+)
+set "PATH=%NODE_VIRTUAL_ENV%\Scripts;%PATH%"
+
+ECHO NodeJS Path %NODE_VIRTUAL_ENV%\Scripts
+
+set "JAVA_HOME=C:\Environments\JDK19"
+ECHO JAVA_HOME %JAVA_HOME%
+
+set "GRADLE_HOME=C:\Environments\gradle-7.3.3"
+ECHO GRADLE_HOME %GRADLE_HOME%
+
+set "ANDROID_HOME=C:\Environments\ANDROID_HOME"
+ECHO  ANDROID_HOME %ANDROID_HOME%
+
+set "ANDROID_SDK_ROOT=%ANDROID_HOME%"
+ECHO  ANDROID_SDK_ROOT %ANDROID_HOME%;
+
+set "ANROID_PATHS=%JAVA_HOME%\bin;"
+
+set "ANROID_PATHS=%GRADLE_HOME%\bin;%ANROID_PATHS%"
+
+set "ANROID_PATHS=%ANDROID_HOME%\cmdline-tools;%ANROID_PATHS%"
+
+set "ANROID_PATHS=%ANDROID_HOME%\cmdline-tools\tools;%ANROID_PATHS%"
+
+set "ANROID_PATHS=%ANDROID_HOME%\cmdline-tools\tools\bin;%ANROID_PATHS%"
+
+set "ANROID_PATHS=%ANDROID_HOME%\emulator;%ANROID_PATHS%"
+
+set "ANROID_PATHS=%ANDROID_HOME%\tools;%ANROID_PATHS%"
+
+set "ANROID_PATHS=%ANDROID_HOME%\tools\bin;%ANROID_PATHS%"
+
+set "ANROID_PATHS=%ANDROID_HOME%\platform-tools;%ANROID_PATHS%"
+
+set "PATH=%ANROID_PATHS%;%PATH%"
+ECHO %ANROID_PATHS:;=;%
+::print %ANROID_PATHS%
+
+
+:END
+
+:END
+
