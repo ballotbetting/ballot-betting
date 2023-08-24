@@ -1,0 +1,125 @@
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .visible-mb,.visible-dt,.visible-sm {
+        display: none;
+    }
+    .visible-tb{
+        display: initial;
+    }
+
+    $maxwidthpercentage : 90%;
+    $totalgrids : 12;
+
+    .col-tb-1{
+        width: calc(($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-2{
+        width: calc(2*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-3{
+        width: calc(3*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-4{
+        width: calc(4*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-5{
+        width: calc(5*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-6{
+        width: calc(6*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-7{
+        width: calc(7*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-8{
+        width: calc(8*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-9{
+        width: calc(9*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-10{
+        width: calc(10*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-11{
+        width: calc(11*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-12{
+        width: calc(12*($maxwidthpercentage/$totalgrids));
+    }
+
+
+    .col-tb-sl-1{
+        margin-left: calc(($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sl-2{
+        margin-left: calc(2*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sl-3{
+        margin-left: calc(3*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sl-4{
+        margin-left: calc(4*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sl-5{
+        margin-left: calc(5*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sl-6{
+        margin-left: calc(6*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sl-7{
+        margin-left: calc(7*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sl-8{
+        margin-left: calc(8*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sl-9{
+        margin-left: calc(9*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sl-10{
+        margin-left: calc(10*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sl-11{
+        margin-left: calc(11*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sl-12{
+        margin-left: calc(12*($maxwidthpercentage/$totalgrids));
+    }
+
+    .col-tb-sr-1{
+        margin-right: calc(($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sr-2{
+        margin-right: calc(2*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sr-3{
+        margin-right: calc(3*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sr-4{
+        margin-right: calc(4*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sr-5{
+        margin-right: calc(5*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sr-6{
+        margin-right: calc(6*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sr-7{
+        margin-right: calc(7*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sr-8{
+        margin-right: calc(8*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sr-9{
+        margin-right: calc(9*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sr-10{
+        margin-right: calc(10*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sr-11{
+        margin-right: calc(11*($maxwidthpercentage/$totalgrids));
+    }
+    .col-tb-sr-12{
+        margin-right: calc(12*($maxwidthpercentage/$totalgrids));
+    }
+    
+  }

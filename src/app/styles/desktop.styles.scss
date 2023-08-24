@@ -1,0 +1,125 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .visible-sm,.visible-mb,.visible-tb {
+        display: none;
+    }
+    .visible-dt{
+        display: initial;
+    }
+    
+    $maxwidthpercentage : 90%;
+    $totalgrids : 12;
+    
+    .col-dt-1{
+        width: calc(($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-2{
+        width: calc(2*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-3{
+        width: calc(3*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-4{
+        width: calc(4*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-5{
+        width: calc(5*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-6{
+        width: calc(6*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-7{
+        width: calc(7*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-8{
+        width: calc(8*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-9{
+        width: calc(9*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-10{
+        width: calc(10*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-11{
+        width: calc(11*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-12{
+        width: calc(12*($maxwidthpercentage/$totalgrids));
+    }
+
+
+    .col-dt-sl-1{
+        margin-left: calc(($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sl-2{
+        margin-left: calc(2*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sl-3{
+        margin-left: calc(3*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sl-4{
+        margin-left: calc(4*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sl-5{
+        margin-left: calc(5*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sl-6{
+        margin-left: calc(6*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sl-7{
+        margin-left: calc(7*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sl-8{
+        margin-left: calc(8*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sl-9{
+        margin-left: calc(9*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sl-10{
+        margin-left: calc(10*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sl-11{
+        margin-left: calc(11*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sl-12{
+        margin-left: calc(12*($maxwidthpercentage/$totalgrids));
+    }
+
+    .col-dt-sr-1{
+        margin-right: calc(($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sr-2{
+        margin-right: calc(2*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sr-3{
+        margin-right: calc(3*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sr-4{
+        margin-right: calc(4*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sr-5{
+        margin-right: calc(5*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sr-6{
+        margin-right: calc(6*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sr-7{
+        margin-right: calc(7*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sr-8{
+        margin-right: calc(8*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sr-9{
+        margin-right: calc(9*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sr-10{
+        margin-right: calc(10*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sr-11{
+        margin-right: calc(11*($maxwidthpercentage/$totalgrids));
+    }
+    .col-dt-sr-12{
+        margin-right: calc(12*($maxwidthpercentage/$totalgrids));
+    }
+    
+  }
